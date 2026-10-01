@@ -319,10 +319,10 @@ footer img{height:36px;width:auto}
     e.preventDefault();
     note.textContent = 'Sending…';
     try {
-      const r = await fetch(form.action, {method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form)});
+      const r = await fetch(form.action, {method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form), signal:AbortSignal.timeout(15000)});
       if (!r.ok) throw 0;
       form.reset(); note.textContent = "Thanks! I'll be in touch soon.";
-    } catch { note.textContent = 'Something went wrong. Please email me directly.'; }
+    } catch { note.innerHTML = 'Something went wrong. Please email me at <a href="mailto:saad@splash.limited">saad@splash.limited</a>.'; }
   });
 </script>
 </body>
