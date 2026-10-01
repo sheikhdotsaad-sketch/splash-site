@@ -18,7 +18,7 @@
 <!--
   =====================================================================
   BEFORE YOU LAUNCH, replace these placeholders (search for them):
-  Contact form emails go to saad@splash.limited via formsubmit.co (free).
+  Contact form emails go to saad@splash.limited via web3forms.com (free).
     Calendly: buttons currently point to the contact form; swap in a Calendly link later
     work-1/2/3.jpg       -> add three portfolio images to this folder
   =====================================================================
@@ -287,10 +287,11 @@ footer img{height:36px;width:auto}
           <span>Toronto, serving clients in Canada, the US &amp; the UK</span>
         </div>
       </div>
-      <form id="contact-form" action="https://formsubmit.co/ajax/saad@splash.limited" method="POST">
-        <input type="hidden" name="_subject" value="New message from splash.limited">
-        <input type="hidden" name="_template" value="table">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="5503b4f3-ad11-46e0-b7c9-da1ea066ce8f">
+        <input type="hidden" name="subject" value="New message from splash.limited">
+        <input type="hidden" name="from_name" value="SPLASH website">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <label>Name<input type="text" name="name" autocomplete="name" required></label>
         <label>Business name &amp; website<input type="text" name="business" autocomplete="organization"></label>
         <label>Email<input type="email" name="email" autocomplete="email" required></label>
@@ -320,7 +321,7 @@ footer img{height:36px;width:auto}
     note.textContent = 'Sending…';
     try {
       const r = await fetch(form.action, {method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form), signal:AbortSignal.timeout(15000)});
-      if (!r.ok) throw 0;
+      const d = await r.json().catch(() => ({})); if (!r.ok || d.success === false) throw 0;
       form.reset(); note.textContent = "Thanks! I'll be in touch soon.";
     } catch { note.innerHTML = 'Something went wrong. Please email me at <a href="mailto:saad@splash.limited">saad@splash.limited</a>.'; }
   });
