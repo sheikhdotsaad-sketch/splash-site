@@ -20,7 +20,6 @@
   BEFORE YOU LAUNCH, replace these placeholders (search for them):
   Contact form emails go to saad@splash.limited via web3forms.com (free).
     Calendly: buttons currently point to the contact form; swap in a Calendly link later
-    work-1/2/3.jpg       -> add three portfolio images to this folder
   =====================================================================
 -->
 <style>
@@ -115,6 +114,20 @@ header.scrolled{border-bottom-color:var(--line)}
 .project:hover .img img{transform:scale(1.04)}
 .project .tag{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
 .project h3{font-weight:700;font-size:26px}
+
+/* case studies */
+.case{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center;background:var(--card);border:1px solid var(--border);border-radius:24px;padding:clamp(28px,4.5vw,64px)}
+.case-body{display:flex;flex-direction:column;gap:14px}
+.case-tag{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.case h3{font-weight:800;font-size:clamp(34px,4vw,52px);line-height:1}
+.case-sub{color:var(--dim);font-weight:500}
+.case p{color:var(--muted);font-size:clamp(17px,1.5vw,19px);max-width:560px}
+.case-link{font-weight:600;margin-top:6px}
+.case-stats{display:flex;flex-direction:column;gap:18px}
+.stat{background:var(--blue);color:#000;border-radius:18px;padding:24px 28px;box-shadow:6px 6px 0 var(--white);margin-right:6px}
+.stat-num{font-family:var(--display);font-style:italic;font-weight:800;font-size:clamp(40px,4.6vw,60px);line-height:1;letter-spacing:-.02em}
+.stat-label{font-weight:600;font-size:16px;margin-top:6px}
+@media (max-width:1024px){.case{grid-template-columns:1fr}}
 
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(40px,6vw,88px);align-items:start}
@@ -269,11 +282,20 @@ footer img{height:36px;width:auto}
   <section id="work" class="section" style="padding-top:0">
     <div class="wrap">
       <div class="section-head"><h2>Recent work</h2><a class="work-link" href="#contact">Start a project →</a></div>
-      <div class="grid3">
-        <div class="project"><div class="img"><img src="work-1.jpg" alt="" onerror="this.remove()"></div><div class="tag">Website + SEO</div><h3>Client name</h3></div>
-        <div class="project"><div class="img"><img src="work-2.jpg" alt="" onerror="this.remove()"></div><div class="tag">Brand &amp; logo</div><h3>Client name</h3></div>
-        <div class="project"><div class="img"><img src="work-3.jpg" alt="" onerror="this.remove()"></div><div class="tag">Video content</div><h3>Client name</h3></div>
-      </div>
+      <article class="case">
+        <div class="case-body">
+          <div class="case-tag">Video editing &amp; content strategy</div>
+          <h3>Trey Thomas</h3>
+          <div class="case-sub">Madden YouTuber · Pro player &amp; coach</div>
+          <p>Took over editing for a growing Madden channel and kept a consistent, high-energy upload schedule, turning a small channel into a community of more than 10,000 subscribers.</p>
+          <a class="case-link" href="https://www.youtube.com/@TreyThomasGaming" target="_blank" rel="noopener">View the channel →</a>
+        </div>
+        <div class="case-stats">
+          <div class="stat"><div class="stat-num">700 → 10K+</div><div class="stat-label">Subscribers</div></div>
+          <div class="stat"><div class="stat-num">400+</div><div class="stat-label">Videos edited</div></div>
+        </div>
+      </article>
+    </div>
     </div>
   </section>
 
