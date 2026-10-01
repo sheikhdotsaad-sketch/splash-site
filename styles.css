@@ -146,6 +146,11 @@ header.scrolled{border-bottom-color:var(--line)}
 .case-logo-wide img{width:72%}
 .cs-wordmark img{width:clamp(240px,32vw,440px);height:auto;display:block}
 
+.gallery-pair{grid-template-columns:1.8fr 0.775fr}
+.gallery-pair img{aspect-ratio:auto;height:100%;object-fit:cover;background:#111}
+.gallery-pair figure{min-height:0}
+@media (max-width:900px){.gallery-pair{grid-template-columns:1fr}}
+
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(40px,6vw,88px);align-items:start}
 .contact-copy{display:flex;flex-direction:column;gap:24px;max-width:520px}
