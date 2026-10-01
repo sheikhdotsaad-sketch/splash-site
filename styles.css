@@ -104,6 +104,11 @@ header.scrolled{border-bottom-color:var(--line)}
 .stat-label{font-weight:600;font-size:16px;margin-top:6px}
 @media (max-width:1024px){.case{grid-template-columns:1fr}}
 
+.case-media{grid-column:1/-1;margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--border)}
+.case-media img{width:100%;height:auto}
+.case-quote{margin:6px 0 0;padding:16px 20px;border-left:3px solid var(--blue);background:#0B0B0B;border-radius:0 12px 12px 0;font-size:17px;line-height:1.5;color:var(--white);font-style:italic}
+.case-quote cite{display:block;margin-top:8px;font-style:normal;font-size:14px;font-weight:600;color:var(--dim)}
+
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(40px,6vw,88px);align-items:start}
 .contact-copy{display:flex;flex-direction:column;gap:24px;max-width:520px}
