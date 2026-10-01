@@ -18,7 +18,7 @@
 <!--
   =====================================================================
   BEFORE YOU LAUNCH, replace these placeholders (search for them):
-  The contact form works automatically on Netlify (Site > Forms).
+  Contact form emails go to saad@splash.limited via formsubmit.co (free).
     Calendly: buttons currently point to the contact form; swap in a Calendly link later
     work-1/2/3.jpg       -> add three portfolio images to this folder
   =====================================================================
@@ -287,9 +287,10 @@ footer img{height:36px;width:auto}
           <span>Toronto, serving clients in Canada, the US &amp; the UK</span>
         </div>
       </div>
-      <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="company-url">
-        <input type="hidden" name="form-name" value="contact">
-        <p hidden><label>Leave this empty<input name="company-url"></label></p>
+      <form id="contact-form" action="https://formsubmit.co/ajax/saad@splash.limited" method="POST">
+        <input type="hidden" name="_subject" value="New message from splash.limited">
+        <input type="hidden" name="_template" value="table">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <label>Name<input type="text" name="name" autocomplete="name" required></label>
         <label>Business name &amp; website<input type="text" name="business" autocomplete="organization"></label>
         <label>Email<input type="email" name="email" autocomplete="email" required></label>
@@ -318,7 +319,7 @@ footer img{height:36px;width:auto}
     e.preventDefault();
     note.textContent = 'Sending…';
     try {
-      const r = await fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(form)).toString()});
+      const r = await fetch(form.action, {method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form)});
       if (!r.ok) throw 0;
       form.reset(); note.textContent = "Thanks! I'll be in touch soon.";
     } catch { note.textContent = 'Something went wrong. Please email me directly.'; }
