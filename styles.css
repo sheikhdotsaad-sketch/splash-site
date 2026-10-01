@@ -151,6 +151,10 @@ header.scrolled{border-bottom-color:var(--line)}
 .gallery-pair figure{min-height:0}
 @media (max-width:900px){.gallery-pair{grid-template-columns:1fr}}
 
+.gallery-landscape{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gallery-landscape img{aspect-ratio:4/3}
+@media (max-width:560px){.gallery-landscape{grid-template-columns:1fr}}
+
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(40px,6vw,88px);align-items:start}
 .contact-copy{display:flex;flex-direction:column;gap:24px;max-width:520px}
