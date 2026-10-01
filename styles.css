@@ -114,6 +114,23 @@ header.scrolled{border-bottom-color:var(--line)}
   .case-media,.case-body,.case-stats{grid-column:1;grid-row:auto}
 }
 
+/* case study detail */
+.cs-hero .back-link{display:inline-block;margin-bottom:32px}
+.cs-title{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.cs-logo h1{font-size:clamp(44px,6vw,80px)}
+.cs-logo img{max-height:120px;width:auto}
+.cs-title .case-sub{margin-top:6px}
+.cs-stats{margin-top:40px;max-width:720px}
+.cs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.cs-block{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.cs-block h2{font-weight:800;font-size:28px}
+.cs-block p{color:var(--muted)}
+.cs-list{margin:0;padding-left:20px;color:var(--muted);display:flex;flex-direction:column;gap:8px}
+.cs-media{border-radius:20px}
+.case-cta{font-weight:600;font-size:15px}
+.case-link-wrap{display:flex;gap:20px;flex-wrap:wrap}
+@media (max-width:900px){.cs-grid{grid-template-columns:1fr}}
+
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(40px,6vw,88px);align-items:start}
 .contact-copy{display:flex;flex-direction:column;gap:24px;max-width:520px}
