@@ -163,6 +163,10 @@ header.scrolled{border-bottom-color:var(--line)}
 .gallery-landscape img{aspect-ratio:4/3}
 @media (max-width:560px){.gallery-landscape{grid-template-columns:1fr}}
 
+.case-type{flex-direction:column;gap:6px;text-decoration:none}
+.case-type-num{font-family:var(--display);font-style:italic;font-weight:800;font-size:clamp(64px,8vw,112px);line-height:1;color:var(--blue)}
+.case-type-label{font-size:16px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:clamp(40px,6vw,88px);align-items:start}
 .contact-copy{display:flex;flex-direction:column;gap:24px;max-width:520px}
