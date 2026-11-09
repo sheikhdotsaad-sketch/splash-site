@@ -237,3 +237,9 @@ footer img{height:36px;width:auto}
 .rm-ctas{display:flex;gap:18px;flex-wrap:wrap;margin-top:36px}
 .rm-cta-sub{color:var(--muted);margin-top:14px;max-width:520px}
 @media (max-width:720px){.rm-ctas .btn{flex:1 1 100%}}
+.hs-gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+.hs-gallery img{aspect-ratio:4/3;background:#111}
+.hs-tags{margin-top:28px}
+.hs-credit{margin-top:16px;font-size:13px;color:var(--dim)}
+@media (max-width:900px){.hs-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.hs-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
