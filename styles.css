@@ -231,7 +231,7 @@ footer img{height:36px;width:auto}
 .pkg li{padding:13px 0 13px 26px;border-bottom:1px solid var(--border);color:var(--muted);font-size:16px;position:relative}
 .pkg li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:700}
 .pkg .btn{width:100%}
-.pkg-featured .btn-primary{box-shadow:none}
+.pkg .btn-primary{box-shadow:none}
 .pkg-note{margin-top:28px;color:var(--dim)}
 @media (max-width:1024px){.packages{gap:36px}}
 .rm-ctas{display:flex;gap:18px;flex-wrap:wrap;margin-top:36px}

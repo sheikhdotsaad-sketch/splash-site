@@ -50,7 +50,7 @@
   send.type = "submit";
   form.append(input, send);
   const foot = el("div", "sc-foot");
-  const book = el("a", null, "Book a free 30-min call →");
+  const book = el("a", null, "Book a free call →");
   book.href = BOOK; book.target = "_blank"; book.rel = "noopener";
   foot.append(book);
   panel.append(head, log, chips, form, foot);
