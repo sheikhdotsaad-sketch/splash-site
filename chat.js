@@ -1,7 +1,7 @@
 /* SPLASH chat assistant widget. Talks to /api/chat (netlify/functions/chat.mjs). */
 (() => {
   const BOOK = "https://calendly.com/saad-splash/30min";
-  const GREETING = "Hey! I'm the SPLASH assistant. Ask me anything about what we do, or tell me about your business and I'll point you in the right direction.";
+  const GREETING = "Hey, I'm Sunny from SPLASH 👋 Ask me anything about what we do, or tell me about your business and I'll point you in the right direction.";
   const CHIPS = ["What do you do?", "Do you work with restaurants?", "Can I get a bot like this?", "Book a free call"];
   const KEY = "splash-chat";
 
@@ -29,14 +29,14 @@
   const bubble = el("button", "sc-bubble");
   bubble.setAttribute("aria-label", "Chat with SPLASH");
   bubble.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>';
-  const teaser = el("div", "sc-teaser", "Questions? Ask me anything 👋");
+  const teaser = el("div", "sc-teaser", "Hey, I'm Sunny. Questions? 👋");
 
   const panel = el("section", "sc-panel");
-  panel.setAttribute("aria-label", "SPLASH assistant");
+  panel.setAttribute("aria-label", "Chat with Sunny from SPLASH");
   panel.hidden = true;
   const head = el("header", "sc-head");
   const title = el("div", "sc-title");
-  title.append(el("strong", null, "SPLASH Assistant"), el("span", null, "Usually replies in seconds"));
+  title.append(el("strong", null, "Sunny"), el("span", null, "SPLASH · Usually replies in seconds"));
   const close = el("button", "sc-close", "×");
   close.setAttribute("aria-label", "Close chat");
   head.append(title, close);
