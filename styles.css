@@ -1,7 +1,7 @@
 :root{
   --blue:#3DB7FF; --black:#000; --white:#fff; --card:#111; --line:#1F1F1F;
   --border:#2A2A2A; --muted:#C7C7C7; --dim:#A3A3A3;
-  --display:'Saira',system-ui,sans-serif; --body:'Instrument Sans',system-ui,sans-serif;
+  --display:'Saira',system-ui,sans-serif; --body:'Archivo',system-ui,sans-serif;
   --pad:clamp(20px,6.5vw,96px);
 }
 *{box-sizing:border-box}
