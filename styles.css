@@ -331,26 +331,26 @@ footer img{height:36px;width:auto}
 @media (prefers-reduced-motion:reduce){.reel{overflow-x:auto}.reel-track{animation:none}}
 
 /* Facebook ad examples (home services) */
-.ad-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:24px;align-items:start}
-.ad-mock{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden}
-.ad-head{display:flex;align-items:center;gap:12px;padding:16px 18px 0}
-.ad-avatar{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#000;display:grid;place-items:center;font-weight:700;font-size:14px;flex:none}
-.ad-name{font-weight:600;font-size:15px;line-height:1.2}
-.ad-meta{font-size:13px;color:var(--dim)}
-.ad-flag{margin-left:auto;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border:1px solid var(--border);border-radius:999px;padding:5px 10px;white-space:nowrap}
-.ad-copy{padding:12px 18px 14px;color:var(--muted);font-size:15px}
-.ad-img{position:relative;background:#000}
-.ad-img img{display:block;width:100%;height:auto}
-.ad-lab{position:absolute;top:12px;background:rgba(0,0,0,.72);color:#fff;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
-.ad-lab-l{left:12px}
-.ad-lab-r{left:calc(50% + 12px)}
-.ad-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;border-top:1px solid var(--border)}
-.ad-domain{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
-.ad-headline{font-weight:600;font-size:16px}
-.ad-cta{flex:none;background:#2A2A2A;color:#fff;font-weight:600;font-size:14px;padding:9px 14px;border-radius:8px;white-space:nowrap}
-.ad-points{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;color:var(--muted)}
-.ad-points strong{display:block;color:var(--white);margin-bottom:4px}
-@media (max-width:900px){.ad-grid,.ad-points{grid-template-columns:1fr}}
+.mk-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:24px;align-items:start}
+.mk-mock{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden}
+.mk-head{display:flex;align-items:center;gap:12px;padding:16px 18px 0}
+.mk-avatar{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#000;display:grid;place-items:center;font-weight:700;font-size:14px;flex:none}
+.mk-name{font-weight:600;font-size:15px;line-height:1.2}
+.mk-meta{font-size:13px;color:var(--dim)}
+.mk-flag{margin-left:auto;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border:1px solid var(--border);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.mk-copy{padding:12px 18px 14px;color:var(--muted);font-size:15px}
+.mk-img{position:relative;background:#000}
+.mk-img img{display:block;width:100%;height:auto}
+.mk-lab{position:absolute;top:12px;background:rgba(0,0,0,.72);color:#fff;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.mk-lab-l{left:12px}
+.mk-lab-r{left:calc(50% + 12px)}
+.mk-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;border-top:1px solid var(--border)}
+.mk-domain{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.mk-headline{font-weight:600;font-size:16px}
+.mk-cta{flex:none;background:#2A2A2A;color:#fff;font-weight:600;font-size:14px;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.mk-points{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;color:var(--muted)}
+.mk-points strong{display:block;color:var(--white);margin-bottom:4px}
+@media (max-width:900px){.mk-grid,.mk-points{grid-template-columns:1fr}}
 
 /* Service pages */
 .pillar li:has(.svc-link){padding:0}
@@ -676,13 +676,13 @@ footer img{height:36px;width:auto}
 .mp-r{color:#4d5156}.mp-m{color:#70757a}
 .mp-stars,.wf-stars{color:#FBBC04}
 /* Facebook ads look like a Facebook post */
-.ad-mock{background:#fff;color:#050505;border:0;font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
-.ad-avatar{background:#2F6B4F;color:#fff}
-.ad-mock .ad-meta,.ad-mock .ad-domain{color:#65676B}
-.ad-mock .ad-copy,.ad-mock .ad-headline{color:#050505}
-.ad-mock .ad-flag{color:#65676B;border-color:#CED0D4}
-.ad-foot{background:#F0F2F5;border-top:0}
-.ad-cta{background:#E4E6EB;color:#050505}
+.mk-mock{background:#fff;color:#050505;border:0;font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+.mk-avatar{background:#2F6B4F;color:#fff}
+.mk-mock .mk-meta,.mk-mock .mk-domain{color:#65676B}
+.mk-mock .mk-copy,.mk-mock .mk-headline{color:#050505}
+.mk-mock .mk-flag{color:#65676B;border-color:#CED0D4}
+.mk-foot{background:#F0F2F5;border-top:0}
+.mk-cta{background:#E4E6EB;color:#050505}
 /* calendar and CRM look like neutral apps */
 .cal{background:#fff;padding:12px;border-radius:12px;font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
 .cal-h{color:#6B7280}
@@ -725,7 +725,7 @@ footer img{height:36px;width:auto}
 @media (max-width:900px){.lg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* generic before/after ad artwork */
-.ad-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-.ad-img svg{display:block;width:100%;height:auto;aspect-ratio:4/3}
-.ad-lab-r{background:#000}
-@media (max-width:900px){.ad-grid{grid-template-columns:1fr}}
+.mk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.mk-img svg{display:block;width:100%;height:auto;aspect-ratio:4/3}
+.mk-lab-r{background:#000}
+@media (max-width:900px){.mk-grid{grid-template-columns:1fr}}
