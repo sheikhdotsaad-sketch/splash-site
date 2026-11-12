@@ -352,6 +352,13 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+  // Work reel: greyed out, lighting up in colour as each piece passes the middle
+  const reel = document.querySelector('.reel');
+  if (reel && 'IntersectionObserver' in window) {
+    reel.classList.add('reel-js');
+    const io = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('on', e.isIntersecting)), {rootMargin: '0px -32% 0px -32%'});
+    reel.querySelectorAll('img').forEach(i => io.observe(i));
+  }
   const header = document.querySelector('header');
   addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 10), {passive:true});
   // Send the form without leaving the page
