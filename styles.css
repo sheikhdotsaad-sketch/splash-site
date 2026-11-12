@@ -616,8 +616,116 @@ footer img{height:36px;width:auto}
   .ws-nav span{display:none}
 }
 
+/* round 3: mockups carry their own brands, not Splash's */
+/* logo board: Tall Pine (green, cream, Oswald) */
+.lb-sk .ink-heavy{stroke:#1F5A43}
+.lb-pick svg{background-color:#F6F2E8;border-color:#1F5A43}
+.lb-pick figcaption b{color:var(--white)}
+.lb-dark{background:#1F5A43;color:#F3EDE2}.lb-dark svg{stroke:#F3EDE2}
+.lb-light{background:#F3EDE2;color:#16181A;border:0}.lb-light svg{stroke:#1F5A43}
+.lb-lock b,.lb-type b{font-family:'Oswald',Impact,sans-serif;font-style:normal;font-weight:700;letter-spacing:.03em}
+.lb-lock span{font-family:'Oswald',sans-serif;font-weight:500}
+/* reel + thumbnails: creator style (Anton, yellow, red) */
+.ph{background:linear-gradient(165deg,#4a3b33,#15110f 60%)}
+.ph-hook{font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;font-style:normal;font-weight:800;background:#fff;color:#000;transform:none;border-radius:6px;line-height:1.15}
+.ph-cap b{color:#FFE600}
+.th b{font-family:'Anton',Impact,sans-serif;font-style:normal;font-weight:400;letter-spacing:.01em;line-height:1}
+.th-blue{background:#FFD400}
+.th-split b{background:#E0241B;color:#fff}
+.th-white em{font-family:'Anton',Impact,sans-serif;font-style:normal;font-weight:400;color:#E0241B;-webkit-text-stroke:0;line-height:.9}
+/* website: Marlow Bakehouse (cream, terracotta, DM Serif) */
+.ws{font-family:'DM Sans',system-ui,sans-serif}
+.ws-desk,.ws-phone{background:#F6F1E7;color:#2A211B;border-color:#d9d0c0}
+.ws-phone{border-color:#2A211B}
+.ws .br-bar{background:#E9E3D8;border-bottom-color:#d9d0c0}.ws .br-bar i{background:#c9c1b3}
+.ws .br-bar span{background:#fff;border-color:#d9d0c0;color:#7a6f63}
+.ws-nav b{font-family:'DM Serif Display',Georgia,serif;font-style:normal;font-weight:400;text-transform:none;color:#2A211B;font-size:18px}
+.ws-phone .ws-nav b{font-size:15px}
+.ws-nav span i{background:#cfc6b6}
+.ws em{background:#C8553D;color:#fff}
+.ws u{border-color:#2A211B}
+.ws-phone .ws-nav em{background:none;color:#2A211B}
+.ws small{color:#C8553D}
+.ws h4{font-family:'DM Serif Display',Georgia,serif;font-style:normal;font-weight:400;line-height:1.04;letter-spacing:0}
+.ws p{color:#6b5f54}
+.ws-photo{background:radial-gradient(circle at 30% 35%,#E8C39A,#C98B5B 45%,#8E5632);border-color:#d9d0c0}
+.ws-cards div{background:#fff;border-color:#E3DACB}.ws-cards i{background:#E3DACB}
+.ws-sticky{background:#2A211B;color:#F6F1E7}
+/* print: Luca's (tomato red, cream, green, Playfair) */
+.pr b{font-family:'Playfair Display',Georgia,serif;font-style:normal;font-weight:800;text-transform:none;line-height:1}
+.pr-menu{background:#FBF6EC;color:#2B1D14}.pr-menu b{border-bottom-color:#B3261E}.pr-menu small{color:#B3261E}.pr-menu p{color:#2B1D14}
+.pr-flyer{background:#B3261E;color:#FBF6EC}.pr-flyer p{color:#FBF6EC;margin-top:6cqw}
+.pr .pr-qr{border-color:#FBF6EC;background:conic-gradient(#FBF6EC 25%,transparent 0 50%,#FBF6EC 0 75%,transparent 0) 0 0/33.4% 33.4%}
+.pr-social{background:#1F3B2D;color:#FBF6EC;border:0}.pr-social small{color:#E9B949}.pr-social em,.pr .pr-social em{color:#B9C7BD}
+.pr-img{background:radial-gradient(circle at 35% 40%,#E9B949,#C8553D 55%,#7A2B1B)}
+.pr-cards{background:#E9E1D2;border:0}
+.pr-card{background:#FBF6EC;color:#2B1D14}.pr-card small{color:#B3261E}
+.pr-card-b{background:#1F3B2D;color:#FBF6EC}
+/* Google mockups look like Google */
+.serp{background:#fff;color:#202124;border:0;font-family:Arial,Helvetica,sans-serif}
+.serp-bar{border-color:#dadce0;color:#3c4043}
+.serp-meta{color:#4d5156}.serp-meta b{color:#202124}
+.serp-h{color:#1a0dab}
+.serp-ad p{color:#4d5156}
+.serp-ext span{color:#1a0dab;border-color:#dadce0}
+.serp-ghost{border-top-color:#ebebeb}.serp-ghost i{background:#ececec}
+.mp-map{background:#E8EAED;border:0}.mp-road{background:#fff}
+.mp-dot,.mp-pin,.mp-dot.d1,.mp-you .mp-pin{background:#EA4335;color:#fff}
+.mp-biz{background:#fff;color:#202124;border-color:#dadce0;font-family:Arial,Helvetica,sans-serif}
+.mp-you{border-color:#1a73e8;background:#E8F0FE}
+.mp-r{color:#4d5156}.mp-m{color:#70757a}
+.mp-stars,.wf-stars{color:#FBBC04}
+/* Facebook ads look like a Facebook post */
+.ad-mock{background:#fff;color:#050505;border:0;font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+.ad-avatar{background:#2F6B4F;color:#fff}
+.ad-mock .ad-meta,.ad-mock .ad-domain{color:#65676B}
+.ad-mock .ad-copy,.ad-mock .ad-headline{color:#050505}
+.ad-mock .ad-flag{color:#65676B;border-color:#CED0D4}
+.ad-foot{background:#F0F2F5;border-top:0}
+.ad-cta{background:#E4E6EB;color:#050505}
+/* calendar and CRM look like neutral apps */
+.cal{background:#fff;padding:12px;border-radius:12px;font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+.cal-h{color:#6B7280}
+.cal-c{border-color:#E5E7EB;background:#FAFAFA}
+.c-reel{background:#6C5CE7;color:#fff}.c-post{background:#F59E0B;color:#000}.c-story{background:#E5E7EB;color:#111}.c-gbp{border:1px solid #1a73e8;color:#1a73e8}
+.kb{background:#F4F5F7;padding:12px;border-radius:12px;font-family:system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif}
+.kb-col{background:#EBECF0;border:0}
+.kb-h,.kb-h span{color:#5E6C84}
+.kb-card{background:#fff;border:0;color:#172B4D;box-shadow:0 1px 1px #091e4240}
+.kb-card span{color:#5E6C84}.kb-card em{color:#0C66E4}
+.kb-col:last-child .kb-card{border:0;border-left:3px solid #22A06B}
+
+/* round 4: logo style range */
+.lg-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.lg-grid figure{margin:0;display:flex;flex-direction:column;gap:10px}
+.lg-grid figcaption{font-size:13px;color:var(--dim)}
+.lg-grid figcaption b{color:var(--white);margin-right:4px}
+.lg{aspect-ratio:3/2;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8%;container-type:inline-size;overflow:hidden}
+.lg span{display:block}
+.lg-word{background:#C8553D;color:#F6F1E7}
+.lg-word b{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:19cqw;line-height:.95}
+.lg-word span{font-family:'DM Sans',sans-serif;font-weight:700;font-size:4.6cqw;letter-spacing:.42em;text-transform:uppercase;margin-top:2cqw;padding-left:.42em}
+.lg-badge{background:#EFE7D6;color:#1C2B39;padding:5%}
+.lg-badge svg{height:100%;width:auto;max-width:100%}
+.lg-badge text{font-family:'Oswald',sans-serif;font-weight:700;fill:currentColor}
+.lg-mono{background:#14213D;color:#E5C07B}
+.lg-mono i{font-family:'Playfair Display',Georgia,serif;font-style:normal;font-weight:800;font-size:22cqw;line-height:1;border:.7cqw solid currentColor;padding:1cqw 5cqw 3cqw}
+.lg-mono u{text-decoration:none;font-size:.55em;font-style:italic;font-weight:700;margin:0 .08em;vertical-align:.18em}
+.lg-mono span{font-family:'DM Sans',sans-serif;font-size:4.2cqw;letter-spacing:.3em;text-transform:uppercase;margin-top:5cqw;color:#fff}
+.lg-bold{background:#FFD400;color:#0A0A0A}
+.lg-bold b{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:22cqw;line-height:.95;letter-spacing:.01em}
+.lg-bold span{font-family:'DM Sans',sans-serif;font-weight:700;font-size:4.2cqw;letter-spacing:.14em;text-transform:uppercase;background:#0A0A0A;color:#FFD400;padding:1cqw 3cqw;margin-top:2cqw}
+.lg-script{background:#FBF6EC;color:#B3261E}
+.lg-script b{font-family:'Pacifico',cursive;font-weight:400;font-size:21cqw;line-height:1.1}
+.lg-script span{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:5cqw;letter-spacing:.34em;text-transform:uppercase;color:#1F3B2D;padding-left:.34em}
+.lg-icon{background:#fff;color:#0B2B33;flex-direction:row;gap:4cqw;text-align:left}
+.lg-icon svg{width:20cqw;flex:none}
+.lg-icon b{font-family:'DM Sans',sans-serif;font-weight:700;font-size:12cqw;line-height:1;letter-spacing:-.03em;display:block}
+.lg-icon span{font-family:'DM Sans',sans-serif;font-weight:500;font-size:5.4cqw;letter-spacing:.3em;text-transform:uppercase;color:#0E7C86;margin-top:1.5cqw}
+@media (max-width:900px){.lg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 /* generic before/after ad artwork */
 .ad-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-.ad-img svg{display:block;width:100%;height:auto}
+.ad-img svg{display:block;width:100%;height:auto;aspect-ratio:4/3}
 .ad-lab-r{background:#000}
 @media (max-width:900px){.ad-grid{grid-template-columns:1fr}}
