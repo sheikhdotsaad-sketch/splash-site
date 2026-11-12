@@ -327,3 +327,25 @@ footer img{height:36px;width:auto}
 .reel img{height:clamp(170px,20vw,260px);width:auto;border-radius:16px;border:1px solid var(--border);display:block;background:#111}
 @keyframes reel{to{transform:translateX(calc(-50% - 8px))}}
 @media (prefers-reduced-motion:reduce){.reel{overflow-x:auto}.reel-track{animation:none}}
+
+/* Facebook ad examples (home services) */
+.ad-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:24px;align-items:start}
+.ad-mock{background:var(--card);border:1px solid var(--border);border-radius:20px;overflow:hidden}
+.ad-head{display:flex;align-items:center;gap:12px;padding:16px 18px 0}
+.ad-avatar{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#000;display:grid;place-items:center;font-weight:700;font-size:14px;flex:none}
+.ad-name{font-weight:600;font-size:15px;line-height:1.2}
+.ad-meta{font-size:13px;color:var(--dim)}
+.ad-flag{margin-left:auto;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border:1px solid var(--border);border-radius:999px;padding:5px 10px;white-space:nowrap}
+.ad-copy{padding:12px 18px 14px;color:var(--muted);font-size:15px}
+.ad-img{position:relative;background:#000}
+.ad-img img{display:block;width:100%;height:auto}
+.ad-lab{position:absolute;top:12px;background:rgba(0,0,0,.72);color:#fff;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.ad-lab-l{left:12px}
+.ad-lab-r{left:calc(50% + 12px)}
+.ad-foot{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 18px;border-top:1px solid var(--border)}
+.ad-domain{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.ad-headline{font-weight:600;font-size:16px}
+.ad-cta{flex:none;background:#2A2A2A;color:#fff;font-weight:600;font-size:14px;padding:9px 14px;border-radius:8px;white-space:nowrap}
+.ad-points{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;color:var(--muted)}
+.ad-points strong{display:block;color:var(--white);margin-bottom:4px}
+@media (max-width:900px){.ad-grid,.ad-points{grid-template-columns:1fr}}
