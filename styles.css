@@ -724,6 +724,20 @@ footer img{height:36px;width:auto}
 .lg-icon span{font-family:'DM Sans',sans-serif;font-weight:500;font-size:5.4cqw;letter-spacing:.3em;text-transform:uppercase;color:#0E7C86;margin-top:1.5cqw}
 @media (max-width:900px){.lg-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
+/* round 5: pencil sketches */
+.lb-row{align-items:start}
+.lb-pencil svg{border:0;border-radius:3px;background:#F2EDE1;box-shadow:0 1px 0 #fff inset,0 6px 14px #0009}
+.lb-pencil:nth-child(1) svg{transform:rotate(-1.4deg)}
+.lb-pencil:nth-child(2) svg{transform:rotate(.9deg)}
+.lb-pencil:nth-child(3) svg{transform:rotate(-.6deg)}
+.lb-pencil .pc{fill:none;stroke:#33312e;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.lb-pencil .pc2{opacity:.5;stroke-width:1.1}
+.lb-pencil .pc-light{stroke-width:.8;opacity:.55}
+.lb-pencil .pc-light.pc2{opacity:.3}
+.lb-pencil .pc-red{stroke:#C0392B;stroke-width:1.4}
+.lb-pencil text{font-family:'Caveat','Bradley Hand',cursive;font-weight:500;font-size:8px;fill:#4a4640}
+.lb-pick svg{border-radius:3px}
+
 /* generic before/after ad artwork */
 .mk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .mk-img svg{display:block;width:100%;height:auto;aspect-ratio:4/3}
